@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Skyline Motion Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FULLSCREEN MEDIA MODAL -->
+<div id="media-modal" class="media-modal">
+    <span class="close-media">&times;</span>
+
+    <img id="modal-image" class="modal-content" />
+    <iframe id="modal-iframe" class="modal-content"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+    </iframe>
+</div>
+
+
+    <!-- NAVBAR -->
+    <nav>
+    <div class="logo-title">
+        <img src="images/Logo(dark).png" class="logo-img" alt="Logo">
+        <div class="logo">Skyline Motion Media</div>
+    </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Bookings</a></li>
+            <li><a></a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="section gallery-hero section-animate">
+        <h1>Media Gallery</h1>
+        <p>A curated collection of aerial photos and cinematic drone footage.</p>
+    </section>
+<!-- VIDEO GRID -->
+<section class="section section-animate">
+    <h2>Videos</h2>
+    <div class="gallery-grid">
+
+        <div class="video-thumb" data-youtube="xzFnuwsSavs">
+            <img src="images/CW2 Thumbnail.webp" class="gallery-video">
+            <div class="play-icon">▶</div>
+        </div>
+
+        <div class="video-thumb" data-youtube="eQo-hw9yRxU">
+            <img src="images/Property1 Thumbnail.webp" class="gallery-video">
+            <div class="play-icon">▶</div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- PHOTO GRID -->
+<section class="section section-animate">
+    <h2>Photos</h2>
+    <div class="gallery-grid">
+
+        <img class="photo-thumb" src="images/DJI_0032.jpg" alt="">
+        <img class="photo-thumb" src="images/DJI_0034.jpg" alt="">
+
+    </div>
+</section>
+    <footer>
+        <p>© Skyline Motion Media — Professional UAV Imagery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
