@@ -843,60 +843,48 @@ footer {
 }
 
 
-
 @media (max-width: 850px) {
 
-    /* NAVBAR becomes vertical container */
+    /* NAVBAR container */
     nav {
         flex-direction: column;
-        align-items: flex-end; /* pushes title to the right */
+        align-items: flex-start;
         padding: 8px 4%;
-        gap: 6px;
+        gap: 10px;
     }
 
-@media (max-width: 850px) {
-
-    /* NAVBAR becomes vertical container */
-    nav {
-        flex-direction: column;
-        align-items: flex-start; /* move title/logo to top-left */
-        padding: 8px 4%;
-        gap: 8px;
-    }
-
-    /* TITLE stays top-left */
+    /* Logo + title top-left */
     .logo-title {
         width: 100%;
-        justify-content: flex-start; /* left aligned */
+        justify-content: flex-start;
         gap: 6px;
     }
 
     .logo-img {
-        height: 45px; /* compact logo */
+        height: 45px;
     }
 
     nav .logo {
         font-size: 1rem;
     }
 
-    /* NAV LINKS stay side-by-side */
+    /* NAV LINKS in a 2x2 grid */
     nav ul {
         width: 100%;
-        display: flex;
-        flex-direction: row; /* horizontal */
-        justify-content: space-between; /* evenly spaced */
-        gap: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        gap: 8px 12px; /* row gap, column gap */
+        justify-items: start; /* align left */
     }
 
     nav ul li a {
-        font-size: 0.95rem; /* slightly larger than before */
-        padding: 0;
-        white-space: nowrap; /* prevents wrapping */
+        font-size: 0.95rem;
+        white-space: nowrap;
     }
 
     /* Email slightly bigger */
     nav ul li:last-child a {
-        font-size: 0.9rem;  /* increased from 0.8 */
+        font-size: 1rem;
         opacity: 0.85;
     }
 }
