@@ -241,7 +241,8 @@ section h2 {
 .service-card {
     background: #e3e3e3;
     padding: 40px;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
     border: 1px solid #cccccc;
@@ -751,4 +752,93 @@ footer {
     }
 }
 
+
+/* MOBILE FIXES */
+@media (max-width: 850px) {
+
+    /* NAVBAR FIX */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 12px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    /* SERVICE CARDS FIX */
+    .service-card {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    /* GALLERY FIX */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-grid img,
+    .gallery-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-content {
+        width: 95vw;
+        height: auto;
+        max-height: 70vh;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .portfolio-img {
+        aspect-ratio: auto;
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+
+/* Medium screens — switch to 2 columns */
+@media (max-width: 1200px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Mobile — switch to 1 column */
+@media (max-width: 850px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .service-card:nth-child(4) {
+        grid-column: auto;
+    }
+}
 
