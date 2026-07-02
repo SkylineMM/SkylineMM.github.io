@@ -888,3 +888,11 @@ footer {
         opacity: 0.85;
     }
 }
+
+/*removes scroll animation for mobile devices, since it can be jarring and slow down performance*/
+@media (max-width: 850px) {
+    .section-animate {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
